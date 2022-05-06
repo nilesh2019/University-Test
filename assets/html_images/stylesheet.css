@@ -1,0 +1,197 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 15px 0;
+}
+.main
+{
+	margin: 0 auto;
+	/*width: 980px;*/
+	display: flex;
+	border: 1px solid #0c93ca;
+/*	-webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px rgba(0,0,0,1);*/
+}
+.LHS
+{
+	float: left;
+	background: #163343;
+	width: 30%;
+	height: 100%;
+}
+
+.marginT
+{
+	margin-top: 10px !important;
+}
+.marginB
+{
+	margin-bottom: 0px !important;
+}
+
+.profile_picture
+{
+	width: 100%;
+}
+.profile_picture img
+{
+	width: 100%;
+}
+.personal_info ul,.porto ul
+{
+	padding-left: 10px;
+	color: #fff;
+	margin: 0;
+}
+.personal_info li,.porto li
+{
+	margin-bottom: 10px;
+}
+.personal_info li img, .porto li img
+{
+	margin-right: 9px;
+}
+.skills,.personal_info,.porto
+{
+	width: 100%;
+	float: left;
+}
+.skills ul
+{
+	padding-left: 10px;
+	color: #fff;
+}
+.skills li
+{
+	margin-bottom: 10px;
+	float: left;
+	width: 100%;
+}
+.skills b
+{
+	float: left;
+	font-weight: normal;
+	width: 40%;
+	color: #FFF;
+	margin-left: 10px;
+}
+.porto li a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.porto li a:hover
+{
+	color: #7edb91;
+}
+
+
+
+.RHS
+{
+	float: right;
+	width: 65%;
+	padding: 15px;
+}
+h1
+{
+	font-size: 35px;
+	margin: 0;
+}
+.job_title
+{
+	color: #4c81b5;
+	margin: 0
+}
+p
+{
+	text-align: justify;
+	line-height: 1.5;
+}
+.heading
+{
+	background: #1c445d;
+	color: #fff;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+h4 img
+{
+	float: left;
+	margin-right: 5px;
+}
+h4 span
+{
+	float: left;
+}
+ul
+{
+	list-style: none;
+}
+.education
+{
+	margin-top: 60px;
+}
+.education h3
+{
+	color: #6fc173;
+}
+h4
+{
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+.timeline
+{
+	list-style: none;
+	padding: 0 0 0 7px;
+	margin: 0;
+}
+.timeline > tbody tr
+{
+	height: 100px;
+}
+
+.timeline-date
+{
+	float: left;
+	display: inline-block;
+}
+.timeline-content
+{
+	width: 90%;
+	float: left;
+	padding-left: 15px;
+}
+.timeline-content span
+{
+	color: #666;
+	font-size: 15px;
+}
+.timeline-content > p
+{
+	margin-top: 5px;
+}
+.timeline-content h3
+{
+	margin: 0;
+	color: #0c93ca;
+}
+
+.skill_image{
+	margin-right: 15px;
+	float: right;
+}
+.skill_image b{
+	padding-right: 50px;
+}
+.skills ul li
+{
+	width:100%;
+}

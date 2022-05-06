@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print Receipt
+</title><link href="Print%20Receipt_files/style.css" rel="stylesheet" type="text/css"><link href="Print%20Receipt_files/AptechStyle.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+.nor_txt { font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #000000; text-decoration: none; }
+.side_heading { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #000000; text-decoration: none; padding-left: 15px; }
+.cancelPopup { background-color: #FFFFFF; background-position: center; padding: 0; border: none; }
+.buttons { background-image: url(../../Images/button-bg.gif); background-position: left top; border: 0px #000000; height: 20px; font-family: Calibri; font-size: 11px; font-weight: bold; color: #ffffff; margin: 5px 4px 5px 2px; }
+</style>
+    <script language="javascript" type="text/javascript">
+        function fnPrint()
+        {            
+            document.getElementById('hdnPrint').style.display = 'none';
+            window.print();
+        }
+        
+        //------------------------------------------------------------------------------------------
+        
+//        background: url(../../images/cancelledsign.jpg) no-repeat;
+//        function printPartOfPage(elementId)
+//        {
+//         var printContent = document.getElementById('hdnPrint');
+//         var windowUrl = 'about:blank';
+//         var uniqueName = new Date();
+//         var windowName = 'Print' + uniqueName.getTime();
+//         var printWindow = window.open(windowUrl, windowName, 'left=50000,top=50000,width=0,height=0');
+
+//         printWindow.document.write(printContent.innerHTML);
+//         printWindow.document.close();
+//         printWindow.focus();
+//         printWindow.print();
+//         printWindow.close();
+//       }
+
+        
+        
+        
+        
+        
+        //-------------------------------------------------------------------------------------------------
+//        
+//       function PrintCancelReceipt(sReceiptId,sStatus)
+//       {
+//        window.showModalDialog("./ViewReceipt.aspx/?ReceiptId=" + sReceiptId and "&Status=" + sStatus ,'myDocument','dialogWidth:800px;dialogHeight:600px;scroll:on');
+//        return false;
+//       }
+       
+//       function PrintReceipt(sReceiptId,sStudentId,sStatus)
+//       {
+//        window.showModalDialog("./ViewReceipt.aspx/?ReceiptId=" + sReceiptId + "&StudentId=" + sStudentId + "&Status=" + sStatus,'myDocument','dialogWidth:800px;dialogHeight:600px;scroll:on');
+//        return false;
+//       }
+        
+        //-------------------------------------------------------------------------------------------
+        
+        
+    </script>
+    <link href="Print%20Receipt_files/AptechStyle.css" type="text/css" rel="stylesheet"><link href="Print%20Receipt_files/jquery.css" type="text/css" rel="stylesheet"><link href="Print%20Receipt_files/jquery_002.css" type="text/css" rel="stylesheet"><link href="Print%20Receipt_files/jquery-ui.css" type="text/css" rel="stylesheet"><link href="Print%20Receipt_files/jquery-ui-1.css" type="text/css" rel="stylesheet"><link href="Print%20Receipt_files/LMS.css" type="text/css" rel="stylesheet"><link href="Print%20Receipt_files/megamenu.css" type="text/css" rel="stylesheet"><link href="Print%20Receipt_files/style.css" type="text/css" rel="stylesheet"><link href="Print%20Receipt_files/tabs.css" type="text/css" rel="stylesheet"><link href="Print%20Receipt_files/jquery-ui-1_002.css" type="text/css" rel="stylesheet"></head>
+    <body>
+    <form method="post" action="/Center/ViewReceipt.aspx?encrypt=1&amp;ReceiptId=MjMyMDIx&amp;StudentId=MzY3NTUx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Print%20Receipt_files/WebResource.js" type="text/javascript"></script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2A7194ED">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+      <div id="IMGDIV" style="position: absolute; left: 60%; top: 6%; background-position: center;
+            background-color: Transparent; padding: 0; border: none;">
+            
+            
+        
+      </div>
+      
+      <div id="Div1">
+        <table id="tblViewReceipt1" width="710px">
+	<tbody><tr>
+		<td style="width: 10px; height: 500px;"></td>
+		<td style="width: 655px;"><table width="100%">
+                <tbody><tr>
+                <td class="nor_txt" colspan="6" style="height: 16px; text-align: Center"><table width="100%">
+                    <tbody><tr>
+                    <td colspan="" style="height: 13px" width="20%" align="left"><input name="hdnPrint" type="button" id="hdnPrint" class="buttons" value="Print" onclick="fnPrint();"></td>
+                    <td colspan="" style="height: 10px" width="60%"><span id="lblMessage1" style="font-weight:bold;">ARENA ANIMATION</span>
+                        <br>
+                        <span id="lblMessage2">A Division of Aptech Limited</span></td>
+                    <td style="height: 13px" width="20%" align="left">&nbsp; </td>
+                  </tr>
+                  </tbody></table>
+                    <span id="lblCenterAddress">W-100, 2ND AVENUE, 4TH 
+FLOOR ANNA NAGAR, NEAR ROUNDTANA BUS STOP  CHENNAI 600040 TAMIL NADU 
+INDIA TelePhone - 26213146 / 26220162 / 9962488446 EMail - 
+ar-annan@acentres.com</span>
+                    <br>
+                    <table width="100%">
+                    <tbody><tr>
+                        <td class="nor_txt" style="height: 10px;border-bottom: solid 1px black" colspan="6">&nbsp;&nbsp; </td>
+                      </tr>
+                  </tbody></table>
+                    <table width="100%">
+                    <tbody><tr>
+                        <td style="height: 14px; width: 11%;" align="left">&nbsp; </td>
+                        <td style="text-align: center; width: 65%; height: 14px;">&nbsp;&nbsp;
+                        
+                        <span id="Label1" style="font-weight:bold;">Receipt</span>
+                        &nbsp;</td>
+                        <td style="width: 39%; height: 14px;" align="Center"><span id="lblCurrentDateLabel">Receipt Print Date: </span>
+                        <span id="lblCurrDate">02/Mar/2021</span></td>
+                      </tr>
+                  </tbody></table>
+                    <table width="100%">
+                    <tbody><tr>
+                        <td class="nor_txt" style="height: 15px; border-bottom: solid 1px black" colspan="6" rowspan="">&nbsp;&nbsp; </td>
+                      </tr>
+                  </tbody></table></td>
+              </tr>
+                <tr valign="top">
+                <td class="nor_txt" style="width: 40%; height: 16px;" rowspan="" colspan="2" align="left"><span id="Label2" style="font-weight:bold;">Receipt No: </span>
+                    
+                    <span id="lblReceiptNo">81373</span></td>
+                <td class="nor_txt" style="width: 30%; height: 16px;" rowspan="" colspan="2" align="left"><span id="lblCurrency" style="font-weight:bold;">Currency: </span>
+                    <span id="lblCurrencyText">INR</span></td>
+                <td class="nor_txt" style="width: 30%; height: 16px;" colspan="1" align="left"><span id="Label3" style="font-weight:bold;">Date: </span>
+                    <span id="lblReceiptDate">26/Feb/2021</span></td>
+              </tr>
+                
+                <tr>
+                <td class="nor_txt" style="width: 40%; height: 16px;" rowspan="" colspan="2" align="left"><span id="Label6" style="font-weight:bold;">Student No: </span>
+                    
+                    <span id="lblSudentNo">Student1307895</span></td>
+                <td class="nor_txt" style="width: 30%; height: 16px;" rowspan="" colspan="2" align="left"><span id="Label5" style="font-weight:bold;">BC No:</span>
+                    <span id="lblInvoiceNo">BC00003268</span></td>
+                <td class="nor_txt" style="width: 30%; height: 16px;" colspan="1" align="left"></td>
+              </tr>
+                <tr>
+                <td class="nor_txt" style="width:40%; height: 16px;" colspan="2"><span id="Label9" style="font-weight:bold;">Name: </span>
+                    <span id="lblStudentName">MADHAVAN  M</span></td>
+                <td class="nor_txt" style="width:30%; height: 16px;" colspan="2">
+                    <span id="lblID" style="font-weight:bold;display:block;float:left;"></span>
+                    <span id="lblRecID" style="font-weight:bold;"></span></td>
+                <td class="nor_txt" style="width:30%; height: 16px;" colspan="1"></td>
+              </tr>
+                <tr>
+                <td class="nor_txt" colspan="5" style="height:16px;">
+                    <span id="Label4" style="font-weight:bold;">Address: </span>
+                    <span id="lblAddress">6/1112 fathima street susaipuram  THIRUVALLUR 602108 TAMIL NADU INDIA</span>
+                    s
+                    </td>
+              </tr>
+                <tr>
+                <td class="nor_txt" style="width:40%; height: 16px;" rowspan="" colspan="2" align="left">
+                    
+                    
+                </td>
+                <td class="nor_txt" style="width:30%; height: 16px;" rowspan="" colspan="2" align="left">
+                    
+                    
+                    <span id="Label18" style="font-weight:bold;">Credit/Debit Card Amount: </span>
+                    
+                    <span id="lblCardAmount"></span>
+                </td>
+                <td class="nor_txt" style="width: 30%; height: 16px;" colspan="1" align="left">
+                    <span id="Label20" style="font-weight:bold;">Authorization No: </span>
+                    <span id="lblAuthNo"></span>
+                </td>
+              </tr>
+                <tr>
+                <td class="nor_txt" colspan="2" rowspan="1" style="width:40%; height: 16px" align="left"><span id="Label10" style="font-weight:bold;">Cash Amount: </span>
+                    <span id="lblCash">30,000.00</span></td>
+                <td class="nor_txt" colspan="2" rowspan="1" style="width: 30%; height: 16px" align="left">
+                <span id="Lblonline" style="font-weight:bold;">Online Payment: </span>
+                    <span id="lblOnlinepay"></span>
+                </td>
+                <td class="nor_txt" colspan="1" style="width: 30%; height: 16px" align="left">
+                <span id="LblonlineRefno" style="font-weight:bold;">Online Payment Refer no: </span>
+                    <span id="lblonlineRefn"></span>
+                
+                </td>
+              </tr>
+                <tr>
+                <td class="nor_txt" style="width: 40%; height: 16px;" colspan="2"><span id="lblInstrumentAmount" style="display:inline-block;font-weight:bold;width:104px;">Cheque/Draft Amount : </span>
+                    <span id="lblChequeAmount"></span></td>
+                <td class="nor_txt" style="width: 30%; height: 16px;" colspan="2"><span id="lblInstrumentNo" style="font-weight:bold;">Cheque/Draft No : </span>
+                    <span id="lblChequeNo"></span></td>
+                <td class="nor_txt" style="width: 30%; height: 16px;" colspan="1"><span id="lblInstrumentDate" style="font-weight:bold;">Cheque/Draft Dated : </span>
+                    <span id="lblChequeDate"></span></td>
+              </tr>
+                <tr>
+                <td class="nor_txt" style="width: 40%" colspan="2"><span id="Label15" style="font-weight:bold;">Drawn On: </span>
+                    <span id="lblChequeDrawnOn"></span></td>
+                 <td class="nor_txt" style="width: 30%" colspan="2"><span id="LabelSVC" style="font-weight:bold;">SVC:</span>
+                <span id="lblSVC"></span> </td>
+                <td class="nor_txt" style="width: 30%" colspan="1"></td>
+              </tr>
+                <tr>
+                <td class="nor_txt" style="height: 14px;" colspan="5"><span id="Label7" style="font-weight:bold;">Received a Sum of </span>
+                    <span id="lblAmountinWords">INR Thirty Thousand   only </span></td>
+              </tr>
+                <tr>
+                <td class="nor_txt" colspan="4" style="height: 22px"><div>
+			<table rules="all" id="gvxReceiptDetails" style="border-width:0px;border-style:None;height:18px;width:68%;border-collapse:collapse;" cellspacing="0">
+				<tbody><tr class="nor_txt" style="font-weight:bold;">
+					<td style="width:60%;" align="left">EXAM FEES</td><td style="width:40%;" align="right">2,000.00</td>
+				</tr><tr class="nor_txt" style="font-weight:bold;">
+					<td style="width:60%;" align="left">COURSE FEE</td><td style="width:40%;" align="right">23,423.74</td>
+				</tr><tr class="nor_txt" style="font-weight:bold;">
+					<td style="width:60%;" align="left">CGST [9%]</td><td style="width:40%;" align="right">2,288.13</td>
+				</tr><tr class="nor_txt" style="font-weight:bold;">
+					<td style="width:60%;" align="left">SGST [9%]</td><td style="width:40%;" align="right">2,288.13</td>
+				</tr>
+			</tbody></table>
+		</div>
+                    </td>
+                <td colspan="3"><table width="100%">
+                    <tbody><tr>
+                    <td class="nor_txt" style="height: 9px;" colspan="2">
+                        <span id="lblCenterName" style="font-weight:bold;">M/s. SARAVANA ENTERPRISES</span></td>
+                  </tr>
+                  </tbody></table>
+                    <table width="100%">
+                    <tbody><tr>
+                        <td class="nor_txt" style="height: 9px;" colspan="2"><span id="lblCenterType"> For Franchisee of Aptech Ltd</span></td>
+                      </tr>
+                  </tbody></table></td>
+              </tr>
+                
+                <tr>
+                <td colspan="4" rowspan="" style="height: 20px"><table width="68%">
+                    <tbody><tr>
+                    <td class="nor_txt" style="width: 60%;"><span id="Label19" style="font-weight:bold;">Total :</span></td>
+                    <td class="nor_txt" style="width: 40%;" align="right"><span id="lblTotalAmount" style="font-weight:bold;">30,000.00</span></td>
+                    </tr>
+                  </tbody></table></td>
+                <td colspan="1" align="left"><table width="100%">
+                    <tbody><tr>
+                    <td class="nor_txt" colspan="2"><span id="Label8" style="display:inline-block;font-weight:bold;width:140px;">AUTHORISED SIGNATORY</span></td>
+                  </tr>
+                  </tbody></table></td>
+                
+              </tr><tr>
+                <td class="nor_txt" style="height: 5px;border-bottom: solid 1px black" colspan="6"><span id="lblReceiptFooter">*Cheques
+ Subject to Realisation *No change or cash can be taken in exchange of 
+Gift Voucher. This receipt must be produced when demanded.Fees once paid
+ are not refundable.Subject to terms and condition printed overleaf the 
+booking confirmation</span></td>
+                
+              </tr>
+                <tr>
+                <td colspan="6" class="nor_txt"><span id="lblFooter2">For any feedback or suggestions please write to us at customercare@aptech.ac.in</span></td>
+              </tr>
+                <tr>
+                <td colspan="6" class="nor_txt"><span id="lblFooter3">Registered
+ Office : APTECH LTD. Aptech House, A 65, M.I.D.C., Marol, Andheri 
+(East), Mumbai–400 093 MAHARASHTRA INDIA Fax – 28272399</span></td>
+              </tr>
+                <tr class="nor_txt">
+                <td colspan="6" align="left">
+                    <table id="tblSocialSites">
+			<tbody><tr>
+				<td><img id="imgfooter" src="Print%20Receipt_files/FB_23012018044148.PNG"></td>
+				<td class="nor_txt" style="width: 61px"><a id="lnkfooter" href="javascript:__doPostBack('lnkfooter','')">https://www.facebook.com/arenaanimation</a></td>
+			</tr>
+		</tbody></table>
+		</td>
+              </tr>
+                <tr class="nor_txt">
+                <td colspan="6" align="left"><div id="divSocialSites" width="100%"><table></table></div></td>
+              </tr>
+                <tr>
+                <td colspan="6" class="nor_txt"><span id="lblFooter5">Service Tax Regd No. : ANUPS2079JST001</span></td>
+              </tr>
+                
+                <tr id="trGSTIN">
+			<td colspan="6" class="nor_txt"><span id="lblGSTIN" style="margin-right:5px;">GSTIN No. :</span>
+                    <span id="lblGSTINNo">AA330317044208G</span></td>
+		</tr>
+		
+              <tr>
+                <td colspan="6" class="nor_txt">
+                <span id="lblGSTCompositionS"></span>
+                </td>
+              </tr>
+                <tr>
+                <td colspan="5" class="nor_txt"><span id="lblFooter4" style="margin-right:5px;">E. &amp;. O.E.</span>
+                    <span id="lblReceipt">7047796</span></td>
+              </tr>
+              </tbody></table>
+              &nbsp;&nbsp;
+              
+              &nbsp;</td>
+		<td style="width: 10px;"></td>
+	</tr>
+</tbody></table>
+
+      </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+
+
+</body></html>

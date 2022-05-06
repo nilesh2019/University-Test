@@ -1,0 +1,211 @@
+
+
+.content{
+	border:3px dashed #ccc;
+	border-radius:0;
+	overflow: auto;
+	position: relative;
+	padding: 20px;
+	background: #242424;
+	margin: 10px;
+	width: 740px;
+	max-width: 97%;
+	height: 400px;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+.content.hidden{ display: none; }
+
+.content.light{
+	background-color: #ddd;
+	color: #333;
+}
+
+.content hr{
+	margin-bottom: -10px;
+	border-top: 1px solid rgba(0,0,0,0.7);
+}
+
+.content.light hr{
+	border-bottom: 1px solid rgba(255,255,255,0.6);
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.content p{ margin: 30px 0; }
+
+.content p:last-child{ margin-bottom: 5px; }
+
+.content p:nth-child(odd), .content.light p:nth-child(odd){
+	background: #444;
+	background: rgba(255,255,255,0.1);
+	padding: 5px 10px;
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+}
+
+.content p:nth-child(3n+3){
+	color: #bbb;
+	background: none;
+	padding: 0;
+}
+
+.content.light p:nth-child(odd){
+	background: #fff;
+	background: rgba(255,255,255,0.8);
+}
+
+.content.light p:nth-child(3n+3){ color: #666; }
+
+.content p.full:nth-child(odd), .content p.half:nth-child(odd), 
+.content p.full:nth-child(3n+3), .content p.half:nth-child(3n+3){
+	background: none;
+	padding: 0;
+}
+
+.content h2{
+	font-size: 200%;
+	line-height: 130%;
+}
+
+.content h2:first-child{ margin-top: 5px; }
+
+.content:nth-child(odd) h2{
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+hr + .content:nth-child(odd) h2{
+	font-family: "Lobster Two", "Georgia", serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.content.light h2{ color: inherit; }
+
+.content img{
+	margin: 0;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	padding: 3px;
+	background: rgba(0,0,0,0.2);
+}
+
+.content.light img{ background: rgba(255,255,255,0.4); }
+
+.content input[type='text'], .content textarea{
+	border: none;
+	background: transparent;
+	background-color: #bbb;
+	background-color: rgba(255,255,255,0.6);
+	min-height: 20px;
+	padding: 5px;
+	-moz-box-shadow: inset -1px -1px 1px rgba(255,255,255,0.6), inset 3px 3px 20px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset -1px -1px 1px rgba(255,255,255,0.6), inset 3px 3px 20px rgba(0,0,0,0.5);
+	box-shadow: inset -1px -1px 1px rgba(255,255,255,0.6), inset 3px 3px 20px rgba(0,0,0,0.5);
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+	width: 50%;
+	font-size: inherit;
+	font-family: inherit;
+	color: #222;
+}
+
+.content textarea{
+	min-height: 80px;
+	width: 70%;
+}
+
+.content .half img{
+	max-width: 48%;
+	margin: 0 0 2% 2%;
+}
+
+.content .half img:nth-child(odd){ margin: 0 2% 2% 0; }
+
+.horizontal-images.content ul, .vertical-images.content ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+.horizontal-images.content li{
+	margin: 0 3px;
+	float: left;
+}
+
+.vertical-images.content li{ margin: 3px 0; }
+
+.horizontal-images.content li:first-child{ margin-left: 0; }
+
+.vertical-images.content li:first-child{
+	margin-bottom: 3px;
+	margin-top: 0;
+}
+
+.horizontal-images.content li:last-child{ margin-right: 0; }
+
+.vertical-images.content li:last-child{ margin-bottom: 0; }
+
+.horizontal-images.content li img{
+	width: auto;
+	padding: 0;
+}
+
+.content.fluid{
+	width: 90%;
+	max-width: 1680px;
+}
+
+.content.fluid h2{
+	color: #eb3755;
+	font-family: "Lobster Two", "Georgia", serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.content.nested{ height: 600px; }
+
+.content.nested .nested{
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.1);
+	height: 400px;
+}
+
+#content-1.content.nested{ margin-bottom: 40px; }
+
+#content-1.content.nested p{ width: 1000px; }
+
+#content-1.content.nested .nested{
+	margin: 20px;
+	width: 600px;
+	height: 300px;
+}
+
+.content.zero-height{ height: 0; }
+
+.content.zero-width{ width: 0; }
+
+.init-hidden #examples{ min-height: 420px; }
+
+
+#mCSB_1_container li span { float:right; margin-top:-17px; margin-left:-9px;}
+#mCSB_1_container li { padding-top:16px;}
+
+.content table{
+	width: 100%;
+	border-collapse: collapse;
+	border-top: 1px dashed #666;
+	border-left: 1px dashed #666;
+	border-right: 1px dashed #666;
+	background: rgba(0,0,0,0.1);
+}
+
+.content table tr{ border-bottom: 1px dashed #666; }
+
+.content table td{ padding: 10px 20px 9px 20px; }
+
+.snap-scrolling-example .content{ 
+	height: auto; 
+	width: 100%;
+}
+
+.snap-scrolling-example .content img{ height: 80px; }

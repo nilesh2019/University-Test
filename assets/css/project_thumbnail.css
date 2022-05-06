@@ -1,0 +1,22 @@
+
+	 .box{
+	 	overflow: visible;
+	 	opacity: 1;
+	 }
+	 .like .dropdown-menu{
+	padding: 0;
+	margin-left: -50px;
+	 }
+	 .like .dropdown-menu li{
+	 	border-bottom: 1px solid #ccc;
+	 	    color: #252525;
+	 	    cursor: pointer;
+	 	    padding: 5px 5px 5px 10px;
+	 }
+	 .like .dropdown-menu li:hover{
+	 	background: #f4f4f4;
+	 }
+	 .like > .dropdown-menu{
+	 	max-height: 170px !important;
+	 	overflow-y: scroll;
+	 }

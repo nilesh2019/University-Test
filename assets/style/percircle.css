@@ -1,0 +1,125 @@
+
+.percircle.gt50 .slice,.rect-auto
+{
+	clip: rect(auto,auto,auto,auto)
+}
+.gt50 .fill,.percircle .bar,.pie
+{
+	position: absolute;
+	border: .08em solid #34A853;
+	width: .84em;
+	height: .84em;
+	clip: rect(0,.5em,1em,0);
+	border-radius: 50%;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg)
+}
+.bar
+{
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden
+}
+.gt50 .bar:after,.gt50 .fill,.pie-fill
+{
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+.percircle
+{
+	position: relative;
+	font-size: 100px;
+	width: 89px;
+	height: 89px;
+	border-radius: 50%;
+	float: left;
+	margin: 0 .1em .1em 0;
+	background-color: #ff8400;
+}
+.percircle *,.percircle :after,.percircle :before
+{
+	box-sizing: content-box
+}
+.percircle.animate:after,.percircle.animate>span
+{
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+	transition: transform .2s ease-in-out
+}
+.percircle.animate .bar
+{
+	-webkit-transition: -webkit-transform .6s ease-in-out;
+	transition: transform .6s ease-in-out
+}
+
+.percircle.small
+{
+	font-size: 89px;
+}
+.percircle > span {
+    position: relative;
+    z-index: 1;
+    width: 71px;
+    top: -25px;
+    height: auto;
+    margin-top: -.5em;
+    font-size: 14px;
+    font-weight: bold;
+    color: #565159;
+    display: inline-block;
+    text-align: center;
+    word-wrap: break-word;
+    background: transperent;
+    left: 10px;
+    vertical-align: middle;
+}
+/*.percircle>span
+{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	top: 45%;
+	height: 1em;
+	margin-top: -.5em;
+	font-size: 14px;
+	font-weight: bold;
+	color: #565159;
+	display: block;
+	text-align: center;
+	word-wrap: break-word;
+	background:transperent;
+}*/
+
+.percircle:after
+{
+	position: absolute;
+	top: .08em;
+	left: .08em;
+	display: block;
+	content: " ";
+	border-radius: 50%;
+	background-color: #f5f5f5;
+	width: .84em;
+	height: .84em
+}
+.percircle .slice
+{
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	clip: rect(0,1em,1em,.5em);
+	top: 0%;
+}
+.percircle:hover
+{
+	cursor: default
+}
+/*.percircle:hover>span
+{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	color: #307bbb
+}*/
+.percircle:hover:after
+{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1)
+}
